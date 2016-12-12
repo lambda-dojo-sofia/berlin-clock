@@ -1,0 +1,35 @@
+/* some style */
+.seconds {
+    margin-left: 40px;
+}
+
+.seconds, .hours {
+    display:block;
+}
+
+.clock-row {
+    display:inline-block;
+}
+
+.bulb {
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.red {
+    background: red;
+    width: 25px;
+    height: 50px;
+}
+
+.white {
+    background: white;
+    width: 25px;
+    height: 50px;
+}
+
+.yellow {
+    background: yellow;
+    width: 25px;
+    height: 50px;
+}
