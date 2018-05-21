@@ -32,7 +32,7 @@
    [bulbs-row (- size toggled) "white"]])
 
 (defn set-clock! []
-  (prn "Setting the time baby!")
+  ;(prn "Setting the time baby!")
   (reset! app-clock (js/Date.)))
 
 (def clock
