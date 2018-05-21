@@ -5,8 +5,8 @@
 
 (def app-clock (atom (js/Date.)))
 
-(defn bulb [state]
-  [:div.bulb {:class state}])
+(defn bulb [state num]
+  ^{:key num} [:div.bulb {:class state}])
 
 (defn bulbs-row [bulbs state]
   [:div.clock-row
@@ -16,7 +16,7 @@
                           "red"
                           (if (not= state "white")
                             "yellow"
-                            "white"))) (range bulbs)))])
+                            "white")) %1) (range bulbs)))])
 
 (defn seconds-component [seconds]
   [:div.seconds
